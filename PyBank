@@ -7,3 +7,7 @@ file = os.path.join('budget_data.csv')
 with open('budget_data.csv','r') as csvfile:
     csvreader = csv.reader(csvfile, delimiter = ',')
     header = next(csvreader)
+#lists to add csv values
+total_months = []
+net_profit = []
+profit_change = []
