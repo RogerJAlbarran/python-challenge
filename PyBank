@@ -30,3 +30,12 @@ decrease = min(profit_change)
 # check index
 monthly_increase = profit_change.index(max(profit_change))+1
 monthly_decrease = profit_change.index(min(profit_change))+1
+
+# print results
+print("Financial Analysis")
+print("-------------------")
+print(f"Total Months:{len(total_months)}")
+print(f"Total: ${sum(net_profit)}")
+print(f"Average Change:{round(sum(profit_change)/len(profit_change),2)}")
+print(f"Greatest Increase in Profits: {total_months[monthly_increase]} (${(str(increase))})")
+print(f"Greatest Decrease in Profits: {total_months[monthly_decrease]} (${(str(decrease))})")
